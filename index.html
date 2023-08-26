@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="author" content="Mariana Matias Siqueira">
+    <title>Operadores Aritméticos</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Uso, em alguns exercícios simples, dos principais operadores aritméticos em Javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Container principal, engloba todos os elementos-->
+    <div class="cont-main">
+
+        <!--Slides-->
+        <div class="cont-slides">
+            
+            <!--Atividade 01:-->
+            <h1 class="ativ-title title1">Quatro Operações</h1>
+            <div class="slide slide1">
+                <div class="ativ1-info">
+                    
+                    <p class="ativ1-p">Número 01:</p>  
+                    <input type="number" class="ativ1-input" id="ativ1-n1"><br>
+            
+                    <p class="ativ1-p">Número 02:</p>  
+                    <input type="number" class="ativ1-input" id="ativ1-n2"><br>
+            
+                    <button onclick="somar()" class="ativ1-btn" id="b1" >Somar</button>
+                    <button class="ativ1-btn" onclick="subtrair()">Subtrair</button>
+                    <button class="ativ1-btn" onclick="dividir()">Dividir</button>
+                    <button class="ativ1-btn" onclick="multiplicar()">Multiplicar</button>
+                    
+                    <br>
+            
+                    <p class="ativ1-p ativ1-result" >Resultado: <span id="ativ1-result"></span></p>  
+                    
+                </div>
+            </div>
+
+            <!--Atividade 02:-->
+            <h1 class="ativ-title title2">Média</h1>
+            <div class="slide slide2">
+                <div class="ativ2-info">
+        
+                    <p class="ativ2-p">Número 01:</p>  
+                    <input type="number" class="ativ2-input " id="ativ2-n1" >
+                    <p class="ativ2-p p2" id="p2">Número 02:</p>  
+                    <input type="number" class="ativ2-input p2" id="ativ2-n2"><br>
+                    <p class="ativ2-p">Número 03:</p>  
+                    <input type="number" class="ativ2-input" id="ativ2-n3">
+                    <p class="ativ2-p p4" id="p4">Número 04:</p>  
+                    <input type="number" class="ativ2-input p4" id="ativ2-n4">
+                    <p class="ativ2-p">Número 05:</p>  
+                    <input type="number" class="ativ2-input" id="ativ2-n5">
+        
+                    <button onclick="calcmedia()" class="ativ2-btn">Calcular</button>
+        
+                    <p class="ativ2-p ativ2-result">Resultado: <span id="ativ2-result"></span></p>
+                </div>
+            </div>
+
+            <!--Atividade 03:-->
+            <h1 class="ativ-title title3">Hipotenusa</h1>
+            <div class="slide slide3">
+                <div class="ativ3-info">
+        
+                    <p class="ativ3-p">1° Cateto:</p>  
+                    <input type="number" class="ativ3-input " id="ativ3-c1">
+                    <p class="ativ3-p c2" id="c2">2° Cateto:</p>  
+                    <input type="number" class="ativ3-input c2" id="ativ3-c2"><br>  
+        
+                    <button onclick="calchipo()" class="ativ3-btn">Calcular</button> 
+                    
+                    <p class="ativ3-p ativ3-result"><br>Resultado: <span id="ativ3-result"></span></p>
+                </div>
+            </div>
+
+            <!--Atividade 04:-->
+            <h1 class="ativ-title title4">Área de um Círculo</h1>
+            <div class="slide slide4">
+                <div class="ativ4-info">
+        
+                    <p class="ativ4-p">Raio:</p>  
+                    <input type="number" class="ativ4-input" id="ativ4-r">
+                    <br>  
+        
+                    <button onclick="calccirculo()" class="ativ4-btn">Calcular</button> 
+                    
+                    <p class="ativ4-p ativ4-result">Resultado: <span id="ativ4-result"></span></p>
+                </div>
+            </div>
+
+            <!--Atividade 05:-->
+            <h1 class="ativ-title title5">IMC</h1>
+            <div class="slide slide5">
+                <div class="ativ5-info">
+                    
+                    <p class="ativ5-p">Peso:</p>  
+                    <input type="number" class="ativ5-input" id="ativ5-peso"
+                    placeholder="ex.: 75.6"><br>
+            
+                    <p class="ativ5-p alt" id="alt" >Altura:</p>  
+                    <input type="number" class="ativ5-input alt" id="ativ5-alt" placeholder="ex.: 1.70"><br>
+            
+                    <button onclick="calcimc()" class="ativ5-btn">Calcular</button>
+            
+                    <p class="ativ5-p ativ5-result" >IMC: <span id="result5-imc"></span></p>
+                    <p class="ativ5-p ativ5-result" >Resultado: <span id="result5"></span></p>  
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Javascript-->
+    <script>
+
+        //Atividade 01:
+        function somar(){
+            //Somar:
+            let num1 = parseFloat(document.getElementById("ativ1-n1").value);
+            let num2 = parseFloat(document.getElementById("ativ1-n2").value);
+            let soma = num1 + num2;
+            document.getElementById("ativ1-result").innerHTML = num1+" + "+num2+" = "+soma;
+        }
+        function subtrair(){
+            //Subtrair:
+            let num1 = parseFloat(document.getElementById("ativ1-n1").value);
+            let num2 = parseFloat(document.getElementById("ativ1-n2").value);
+            let sub = num1 - num2;
+            document.getElementById("ativ1-result").innerHTML = num1+" - "+num2+" = "+sub;
+        }
+        function dividir(){
+            //Dividir:
+            let num1 = parseFloat(document.getElementById("ativ1-n1").value);
+            let num2 = parseFloat(document.getElementById("ativ1-n2").value);
+            let div = num1 / num2;
+            document.getElementById("ativ1-result").innerHTML = num1+" : "+num2+" = "+div;
+        }
+        function multiplicar(){
+            //Multiplicar:
+            let num1 = parseFloat(document.getElementById("ativ1-n1").value);
+            let num2 = parseFloat(document.getElementById("ativ1-n2").value);
+            let mult = num1 * num2;
+            document.getElementById("ativ1-result").innerHTML = num1+" x "+num2+" = "+mult;
+        }
+    
+        //Atividade 02:
+        function calcmedia(){
+            let num1 = parseFloat(document.getElementById("ativ2-n1").value);
+            let num2 = parseFloat(document.getElementById("ativ2-n2").value);
+            let num3 = parseFloat(document.getElementById("ativ2-n3").value);
+            let num4 = parseFloat(document.getElementById("ativ2-n4").value);
+            let num5 = parseFloat(document.getElementById("ativ2-n5").value);
+            let media = (num1+num2+num3+num4+num5)/5;
+            document.getElementById("ativ2-result").innerHTML = num1+" + "+num2+" + "+num3+" + "+num4+" + "+num5+" : 5 = "+media;
+        }
+    
+        //Atividade 03:
+        function calchipo(){
+            let num1 = parseFloat(document.getElementById('ativ3-c1').value);
+            let num2 = parseFloat(document.getElementById('ativ3-c2').value);
+            let hipotenusa = Math.hypot(num1,num2);
+            document.getElementById('ativ3-result').innerHTML = " √(cat1 x cat1) + (cat2 x cat2) = "+hipotenusa;
+        }
+
+        //Atividade 04:
+        function calccirculo(){
+            let raio = parseFloat(document.getElementById('ativ4-r').value);
+            let area = Math.PI * (raio * raio);
+            document.getElementById('ativ4-result').innerHTML = "&#960 x ("+raio+" x "+raio+") = "+area;
+        }
+
+        //Atividade 05:
+        function calcimc(){
+            let peso = parseFloat(document.getElementById('ativ5-peso').value);
+            let altura = parseFloat(document.getElementById('ativ5-alt').value);
+            let imc = peso / (altura*altura);
+            document.getElementById('result5').innerHTML = peso+" : ("+altura+" x "+altura+") = "+imc;
+
+            if(imc<18.5){
+                document.getElementById('result5-imc').innerHTML = "Abaixo do Peso";
+            } else if(imc<24.9){
+                document.getElementById('result5-imc').innerHTML = "Peso Ideal";
+            } else if(imc<29.9){
+                document.getElementById('result5-imc').innerHTML = "Sobrepeso";
+            } else if(imc<34.9){
+                document.getElementById('result5-imc').innerHTML = "Obesidade Grau 1";
+            } else if(imc<39.9){
+                document.getElementById('result5-imc').innerHTML = "Obesidade Grau 2";
+            } else{
+                document.getElementById('result5-imc').innerHTML = "Obesidade Grau 3";
+            }
+        }
+
+    </script>
+</body>
+</html>

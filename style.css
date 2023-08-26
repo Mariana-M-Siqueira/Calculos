@@ -1,0 +1,359 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #C5E9B4;
+    height: 100vh;
+
+}
+
+/*Container Principal*/
+.cont-main{
+    width: 350px;
+    height: 450px;
+    margin-left: 19%;
+    margin-top: 80px;
+}
+
+/*Título das Atividades*/
+.ativ-title{
+    text-align: center;
+    font-family: Cambria, Times, 'Times New Roman', serif;
+}
+
+/*Posicionando os slides*/
+.slide2,.title2,.slide4,.title4,.vs-btn{
+    position: absolute;
+    display: flex;
+    margin-left: 40%;
+    margin-top: -350px;
+}
+
+.title2{
+    margin-top: -405px;
+    left: 430px;
+}
+
+.title4{
+    margin-top: -405px;
+    left: 340px;
+}
+
+.vs-btn{
+    margin-top: -310px;
+    left: 340px;
+}
+
+.slide5{
+    margin-left: 325px;
+}
+
+.title5{
+    margin-left: 470px;
+}
+
+
+/*Slide 1 - Atividade Operações*/
+.slide1{
+    background: url(img/slide350.png) no-repeat;
+    width: 350px;
+    height: 347px;
+    display: flex;
+    filter: drop-shadow(9px 9px 9px rgba(0, 0, 0, 0.15));
+}
+
+.ativ1-info{
+    margin-top: 20px;
+}
+.ativ1-p,.ativ1-input{
+    margin-left: 40px;
+    font-family: Jost, sans-serif;
+    font-size: 18px;
+    
+}
+
+.ativ1-p{
+    margin-left: 50px;
+    margin-bottom: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ativ1-input{
+    height: 28px;
+    border: none;
+    border-radius: 3px;
+    width: 75%;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.ativ1-btn{
+    background-color: rgb(187, 56, 44);
+    border: none;
+    margin-left: 1px;
+    padding: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+    font-family: Jost, sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+}
+
+#b1{
+    margin-left: 20px;
+}
+
+.ativ1-result{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+
+/*Slide 2 - Atividade Média*/
+.slide2{
+    background: url(img/slide350.png) no-repeat;
+    width: 350px;
+    height: 347px;
+    display: flex;
+    font-family: Jost, sans-serif;
+    font-size: 17px;
+    filter: drop-shadow(9px 9px 9px rgba(0, 0, 0, 0.15));
+}
+
+.ativ2-info{
+    margin-left: 35px;
+    margin-top: 20px;
+    
+}
+
+.ativ2-p{
+    margin-bottom: 0;
+    margin-left: 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Jost, sans-serif;
+}
+
+.p2,.p4{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 140px;
+    display: flex;
+    font-family: Jost, sans-serif;
+}
+
+#p2,#p4{
+    margin-top: -50px;
+    margin-left: 150px;
+}
+
+.ativ2-input{
+    height: 28px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    padding-left: 10px;
+    width: 35%;
+}
+
+.ativ2-btn{
+    background-color: rgb(187, 56, 44);
+    border: none;
+    border-radius: 4px;
+    font-family: Jost, sans-serif;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+    margin-left: 32px;
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.ativ2-result{
+    width: 250px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+/*Slide 3 - Atividade Hipotenusa*/
+.slide3{
+    background: url(img/slide350.png) no-repeat;
+    width: 350px;
+    height: 347px;
+    display: flex;
+    font-family: Jost, sans-serif;
+    font-size: 18px;
+    filter: drop-shadow(9px 9px 9px rgba(0, 0, 0, 0.15));
+}
+
+.ativ3-info{
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 125px;
+}
+
+.ativ3-p{
+    margin-left: 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    margin-bottom: 2px;
+    margin-top: 40px;
+}
+
+.c2{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 0;
+}
+
+#c2{
+    margin-top: -53px;
+    margin-left: 145px;
+}
+
+.ativ3-btn{
+    background-color: rgb(187, 56, 44);
+    border: none;
+    border-radius: 4px;
+    font-family: Jost, sans-serif;
+    font-size: 17px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+    padding: 5px;
+    padding-left: 81%;
+    padding-right: 81%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.ativ3-input{
+    height: 28px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    padding-left: 10px;
+    width: 105px;
+}
+
+.ativ3-result{
+    font-size: 19px;
+    margin-top: 13px;
+    margin-left: 0;
+}
+
+
+/*Slide 4 - Atividade Área do Círculo*/
+.slide4{
+    background: url(img/slide350.png) no-repeat;
+    width: 350px;
+    height: 347px;
+    display: flex;
+    font-family: Jost, sans-serif;
+    font-size: 20px;
+    filter: drop-shadow(9px 9px 9px rgba(0, 0, 0, 0.15));
+ }
+ 
+ .ativ4-info{
+     margin-left: 40px;
+     margin-top: 37px;
+ }
+
+ .ativ4-p{
+     margin-bottom: 3px;
+     margin-left: 10px;
+     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ .ativ4-input{
+     height: 28px;
+     border: none;
+     border-radius: 3px;
+     font-size: 13px;
+     padding-left: 10px;
+     width: 95%;
+ }
+
+ .ativ4-btn{
+     margin-top: 30px;
+     background-color: rgb(187, 56, 44);
+     border: none;
+     border-radius: 4px;
+     font-family: Jost, sans-serif;
+     font-size: 17px;
+     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+     padding: 5px;
+     padding-left: 100px;
+     padding-right: 100px;
+     cursor: pointer;
+ }
+
+ .ativ4-result{
+     margin-top: 30px;
+ }
+
+
+/*Slide 5 - Atividade IMC*/
+.slide5{
+    background: url(img/slide350.png) no-repeat;
+    width: 350px;
+    height: 347px;
+    display: flex;
+    font-family: Jost, sans-serif;
+    font-size: 19px;
+    filter: drop-shadow(9px 9px 9px rgba(0, 0, 0, 0.15));
+}
+
+ .ativ5-info{
+     margin-left: 35px;
+     margin-top: 30px;
+ }
+
+ .ativ5-p{
+     margin-bottom: 3px;
+     margin-left: 10px;
+     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ .alt{
+     position: absolute;
+     margin-left: 140px;
+     margin-top: -30px;
+ }
+
+ #alt{
+     margin-top: -55px;
+     margin-left: 150px;
+ }
+
+ .ativ5-input{
+     height: 28px;
+     border: none;
+     border-radius: 3px;
+     font-size: 13px;
+     padding-left: 10px;
+     width: 33%;
+ }
+
+ .ativ5-btn{
+     margin-top: 10px;
+     margin-bottom: 5px;
+     background-color: rgb(187, 56, 44);
+     border: none;
+     border-radius: 4px;
+     font-family: Jost, sans-serif;
+     font-size: 17px;
+     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+     padding: 5px;
+     padding-left: 105px;
+     padding-right: 105px;
+     cursor: pointer;
+ }
+
+ .ativ5-result{
+     font-size: 19px;
+ }
+
